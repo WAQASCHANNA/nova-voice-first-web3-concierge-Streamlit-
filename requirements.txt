@@ -1,0 +1,27 @@
+# ---- Core Web App ----
+streamlit>=1.36
+streamlit-webrtc>=0.47   # voice capture/recording
+requests>=2.31
+python-dotenv>=1.0       # load ELEVENLABS_API_KEY etc.
+
+# ---- Coral MCP & Agents ----
+# coral-protocol>=0.3      # core Coral SDK (pip version, not docker) - removed due to unavailability
+pydantic>=2.7             # input/output schemas for registry.toml
+toml>=0.10                # parse registry.toml if needed
+
+# ---- AI/ML APIs ----
+openai>=1.40             # for aimlapi.com compatibility if needed
+mistralai>=0.1           # Mistral API client
+elevenlabs>=0.3          # TTS / STT wrapper
+
+# ---- NFT & Blockchain ----
+# web3>=6.15               # optional if querying on-chain data - removed due to Python 3.13 incompatibility
+# crossmint-sdk>=0.1       # simple Crossmint REST calls (if unavailable use requests) - removed due to unavailability
+
+# ---- Data / Utils ----
+pandas>=2.2              # rarity table rendering
+numpy>=1.26
+
+# ---- Audio ----
+soundfile>=0.12
+av>=10.0                 # backend for streamlit-webrtc
